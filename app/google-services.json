@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "1066879893445",
+    "firebase_url": "https://smartalert-ff30f-default-rtdb.firebaseio.com",
+    "project_id": "smartalert-ff30f",
+    "storage_bucket": "smartalert-ff30f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1066879893445:android:bdd0857f7aae16567495ac",
+        "android_client_info": {
+          "package_name": "com.example.smartalert"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC9EP0NGcmyLVTEUyLZtYHlpqFxX7LNbsk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminMenu">
+
+    <Button
+        android:id="@+id/viewSubmitions"
+        android:layout_width="187dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="26dp"
+        android:onClick="disaster"
+        android:text="@string/view_dangers"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/high_dangers"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logout" />
+
+    <Button
+        android:id="@+id/high_dangers"
+        android:layout_width="180dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="394dp"
+        android:onClick="dangers"
+        android:text="@string/high_dangers"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/viewSubmitions"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/viewSubmitions"
+        app:layout_constraintTop_toBottomOf="@+id/viewSubmitions" />
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="156dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="177dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="42dp"
+        android:onClick="logout"
+        android:text="@string/log_out"
+        app:layout_constraintBottom_toTopOf="@+id/viewSubmitions"
+        app:layout_constraintEnd_toEndOf="@+id/high_dangers"
+        app:layout_constraintStart_toStartOf="@+id/viewSubmitions"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

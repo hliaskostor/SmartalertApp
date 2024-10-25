@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="nameText" type="id" />
+    <item name="surnameText" type="id" />
+    <item name="cityShow" type="id" />
+    <item name="disasterType" type="id" />
+</resources>

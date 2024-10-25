@@ -1,0 +1,235 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Details">
+
+
+    <Button
+        android:id="@+id/backDangers"
+        android:layout_width="120dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="144dp"
+        android:layout_marginBottom="15dp"
+        android:onClick="back"
+        android:text="@string/backDangers"
+        app:layout_constraintBottom_toTopOf="@+id/button5"
+        app:layout_constraintEnd_toStartOf="@+id/high"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonNot" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="116dp"
+        android:layout_height="65dp"
+        android:layout_marginBottom="33dp"
+        android:onClick="reject"
+        android:text="@string/reject"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/backDangers" />
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="55dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonNot"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewpic">
+
+        <TableLayout
+            android:id="@+id/tableLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginBottom="28dp"
+            android:paddingStart="3dp"
+            android:scrollbarStyle="outsideInset"
+            android:scrollbarTrackHorizontal="@color/black"
+            android:scrollbarTrackVertical="@android:color/black"
+            android:theme="@android:style/Widget.DeviceDefault.Light.ProgressBar.Large">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom"
+                android:scrollbarThumbHorizontal="@color/black">
+
+                <TextView
+                    android:id="@+id/nameText"
+                    android:layout_width="167dp"
+                    android:layout_height="39dp"
+                    android:text="@string/name"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/showName"
+                    android:layout_width="124dp"
+                    android:layout_height="match_parent"
+                    android:textSize="20sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/surnameText"
+                    android:layout_width="122dp"
+                    android:layout_height="39dp"
+                    android:text="@string/surname"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/showSurname"
+                    android:layout_width="128dp"
+                    android:layout_height="match_parent"
+                    android:textSize="20sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="94dp">
+
+                <TextView
+                    android:id="@+id/cityShow"
+                    android:layout_width="145dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/city"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/showCity"
+                    android:layout_width="199dp"
+                    android:layout_height="66dp"
+                    android:textSize="20sp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="338dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/latitude"
+                    android:layout_width="117dp"
+                    android:layout_height="44dp"
+                    android:text="@string/latitude"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/enterLatitude"
+                    android:layout_width="158dp"
+                    android:layout_height="83dp"
+                    android:textSize="20sp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/longitude"
+                    android:layout_width="146dp"
+                    android:layout_height="41dp"
+                    android:text="@string/longitude" />
+
+                <TextView
+                    android:id="@+id/enterLongitude"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="383dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/disasterType"
+                    android:layout_width="146dp"
+                    android:layout_height="60dp"
+                    android:text="@string/disaster_type"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/showDisasters"
+                    android:layout_width="201dp"
+                    android:layout_height="match_parent"
+                    android:textSize="20sp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/datetime"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/showdatetime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp" />
+
+            </TableRow>
+
+        </TableLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/imageViewpic"
+        android:layout_width="275dp"
+        android:layout_height="185dp"
+        android:layout_marginStart="71dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="71dp"
+        android:layout_marginBottom="21dp"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/high"
+        android:layout_width="119dp"
+        android:layout_height="58dp"
+        android:layout_marginEnd="16dp"
+        android:onClick="high"
+        android:text="@string/high"
+        app:layout_constraintBottom_toBottomOf="@+id/backDangers"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/backDangers"
+        app:layout_constraintTop_toTopOf="@+id/backDangers" />
+
+    <Button
+        android:id="@+id/buttonNot"
+        android:layout_width="130dp"
+        android:layout_height="57dp"
+        android:layout_marginBottom="39dp"
+        android:onClick="send"
+        android:text="@string/notificate"
+        app:layout_constraintBottom_toTopOf="@+id/backDangers"
+        app:layout_constraintEnd_toEndOf="@+id/button5"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/backDangers"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView3"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
